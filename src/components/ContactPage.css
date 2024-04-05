@@ -1,0 +1,35 @@
+section{
+    min-height: 500px;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+section#contact{
+    padding-top: 50px;
+    background-color: #1d1d1d;
+
+}
+
+.title_span{
+    width: fit-content;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    padding: 5px;
+    color: #FF8C00;
+}
+
+#inboxBtn{
+    border:1px solid #FF8C00;
+    border-radius:5px;
+    background-color:#1d1d1d;
+    height:50px;
+    color: #FF8C00;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+#inboxBtn:hover{
+    transform: scale(1.04);
+    box-shadow: 4px 3px 1px #FF8C00;
+}

@@ -1,0 +1,154 @@
+.nav{
+    padding: 10px;
+    padding-left: 50px;
+    padding-right:50px ;
+    height: 65px;
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1D1D1D;
+    color: white;
+    position: sticky;
+    top:0px;
+    transition: all .3s ease;
+    z-index: 999;
+   
+}
+.nav.hidden{
+    top: -100px;
+}
+
+.nav ul{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 40%;
+    justify-content: space-between;
+}
+.nav a{
+    text-decoration: none;
+    color:white;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .2s ease-out;
+}
+.nav a:hover{
+    color: #FF8C00;
+}
+
+#logo a{
+    font-size: 24px;
+    color: #FF8C00;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family:'Protest Guerrilla','Rubik Bubbles','Honk','Sacramento';
+}
+.nav ul a small{
+    color:#FF8C00;
+    font-size: 12px;
+}
+.nav ul li{
+    list-style: none;
+    margin: 5px;
+    
+}
+.menu{
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+.menu span{
+    width: 25px;
+    height: 2px;
+    background-color:white ;
+    margin: 8px;
+    display: block;
+    position: relative;
+    top: 8px;
+}
+
+.dropdownNav{
+    position: absolute;
+    height: fit-content;
+    background-color: #333333 ;
+    width: 100%;
+    top:-300px;
+    padding: 0px;
+    /* border: #333333 solid 1px; */
+    /* border: #FF8C00 solid 1px; */
+    display: block;
+    border-radius: 3px;
+}
+.dropdownNav.visible{
+    top: 85px;
+}
+.dropdownNav ul{
+    padding: 0px;
+    margin: 0px;
+}
+.dropdownNav ul li{
+    list-style: none;
+    height: 50px;
+    /* border-bottom: 1px #FF8C00 solid; */
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdownNav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: all .3s ease;
+}
+.dropdownNav ul li a:hover{
+    color: #FF8C00;
+}
+
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [921px -> 1200px]*/
+    .nav ul{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 920px){
+	/*Big smartphones [731px -> 920px]*/
+    .nav ul{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 730px){
+	/*Small smartphones [671px -> 730px]*/
+    .nav{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 670px){
+    .dropdownNav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 670px){
+	/*Small smartphones [325px -> 670px]*/
+    .nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    span#chip{
+        display: none;
+    }
+    
+    /* span#chip{
+        top: 300px;
+    } */
+}
